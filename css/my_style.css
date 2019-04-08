@@ -1,0 +1,167 @@
+body > header{
+    padding: 15px
+}
+body > header > div{
+    background-image: linear-gradient(to bottom,#f4f2f2,#dfdcdc);
+    border-radius: 7px;
+    border: #e0e0e0 2px solid;
+    border-bottom: #aaaaaa 4px solid;
+}
+.nav_bar .nav_bar_item{
+    display: inline-block;
+}
+.nav_bar .nav_bar_item > div{
+    position: relative;
+}
+.nav_bar .nav_bar_item .content{
+    padding: 20px;
+    color: #848484;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer
+}
+.nav_bar .nav_bar_item a:hover{
+    text-decoration: none
+}
+.nav_bar .nav_bar_item .content:hover{
+    background-color: #d1cfcf;
+    color: #3d3d3d
+}
+.nav_bar .nav_bar_item:hover{
+    background-color: #d1cfcf;
+}
+body > header .icons_nav{
+    padding-top: 18px
+}
+body > header .icons_nav img{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-left: 10px
+}
+body > header .search_box{
+    padding-top: 12px
+}
+.nav_bar .nav_bar_item .sub_menu{
+    width: 250px;
+    padding-top: 32px;
+    display: none
+}
+.nav_bar .nav_bar_item .sub_menu header{
+    height: 50px;
+    background-color: #dfdcdc;
+    border: #e0e0e0 2px solid;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 10px;
+    font-weight: bolder
+}
+.nav_bar .nav_bar_item .sub_menu header img{
+    float: right;
+    width: 20px;
+    height: 20px
+}
+.nav_bar .nav_bar_item .sub_menu section{
+    background-color: #f4f2f2;
+    border: #e0e0e0 2px solid;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px
+}
+.nav_bar .nav_bar_item .sub_menu > .border_style{
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    top: 0;
+}
+.nav_bar .nav_bar_item .sub_menu .sub_menu_item .content{
+    display: block;
+    border-bottom: #e0e0e0 1px solid;
+    padding: 10px;
+    padding-top: 14px;
+    padding-bottom: 14px
+}
+.nav_bar .nav_bar_item .sub_menu .sub_menu_item  img{
+    float: right;
+    width: 20px;
+    height: 20px
+}
+.nav_bar .nav_bar_item .sub_menu .sub_menu_item .content{
+    font-size: 13px
+}
+body > header .search_box .menu_icon{
+    display: none;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px
+}
+body > header .search_box .search_box_icon{
+    display: none;
+    margin-right: 10px;
+    height: 25px;
+    width: 25px
+}
+@media(min-width: 900px){
+    .nav_bar .nav_bar_item .sub_menu{
+        position: absolute;
+        left: 0;
+        top: 100%;
+    }
+}
+@media(max-width: 900px){
+    body > header .search_box .menu_icon{
+        display: inline-block
+    }
+    body > header .search_box .search_box_icon{
+        display: inline-block
+    }
+    body > header .search_box .form-control{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 45px;
+        background-color: #f4f2f2;
+        width: 100%;
+        height: 45px;
+        display: none
+    }
+    body > header .icons_nav{
+        padding-top: 8px;
+        padding-bottom: 8px
+    }
+    body > header .search_box{
+        padding-top: 8px;
+        padding-bottom: 8px
+    }
+    .nav_bar{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 45px;
+        width: 100%;
+        background-color: #f4f2f2;
+        border-bottom: #aaaaaa 4px solid;
+        display: none
+    }
+    .nav_bar .nav_bar_item{
+        width: 100%;
+        padding-bottom: 25px
+    }
+    .nav_bar .nav_bar_item .content{
+        padding-left: 25px
+    }
+    .nav_bar > div{
+        margin: 0px
+    }
+    .nav_bar .nav_bar_item .sub_menu > .border_style{
+        display: none
+    }
+    .nav_bar .nav_bar_item .sub_menu{
+        width: 100%;
+        padding-top: 0px;
+        padding-left: 15px;
+        padding-right: 15px
+    }
+}
